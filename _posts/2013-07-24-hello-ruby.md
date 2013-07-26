@@ -40,7 +40,7 @@ Special punctuation in identifiers:
 
 Keywords
 --------
-![ruby keywords]({{ BASE_PATH}}/_imgs/ruby_keywords.png)
+![ruby keywords](/images/ruby_keywords.png)
 
 Block Structure
 ---------------
