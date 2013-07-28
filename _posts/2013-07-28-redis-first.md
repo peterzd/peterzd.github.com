@@ -21,6 +21,7 @@ $ make
 ```
 
 运行Server：
+在安装目录里执行
 ```
 $ src/redis-server
 ```
@@ -67,4 +68,7 @@ ZRANGE hackers 2 4 => ["Alan Kay","Richard Stallman","Yukihiro Matsumoto"]
 
 会自动根据时间进行排序
 
+### 其他资料
+[Using Redis with Ruby on Rails](http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html)
+[Data types intro](http://redis.io/topics/data-types-intro)
 
