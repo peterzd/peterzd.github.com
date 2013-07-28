@@ -3,7 +3,7 @@ layout: post
 title: "Hello Ruby"
 description: ""
 category: ruby
-tags: [ruby programmer]
+tags: [ruby, program]
 ---
 {% include JB/setup %}
 
