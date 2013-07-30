@@ -29,14 +29,14 @@ tags: [ruby, program]
   * 'this is a string'
 	* "\tThis is the #{1 + 1} string"
 	* 如果觉得用 ''，或""不方便，也可以使用 `%q`(允许有''出现), `%Q`(或者是%，可以有""出现)来表示。
-	
+
 	```ruby
 	%q(Don't worry about escaping ' characters!)
 	%Q|"How are you?", he said|
 	```
 
 	* Here Document：如果一段文字比较长，可以用_任意字符_作为delimiter，如：
-	
+
 	```ruby
 	document = <<HERE
 	xxxx
@@ -50,9 +50,29 @@ tags: [ruby, program]
 * s = "hello"
   * `s[0, 2] # "he"`, 从哪个开始，取几个
 	* `s[2..3] # "ll"`, 用Range来取值
-	
+
 ## Arrays
+ * 可以用 ` %w[this is a test]`来表示一个Array
+ * 可以往后面加元素，但不能往第一个前面加元素
+ * `-`操作符，提取两个Array间不同的元素，返回一个新的Array
+ * `a = [0] * 8  # [0, 0, 0, 0, 0, 0, 0, 0, 0]`
 
+## Hash
+`numbers = { one: 1, two: 2, three: 3}`, 是用**Hash Table**来表示的。
+如果一个类override了 `eql?`方法，也要重写一下`hash`方法。
 
+## Ranges
+`1..10`: 从1到10，包括10
+`1.0...10.0`：不包括10.0
+
+## Symbols
+以一个`:`开头。也可以用`%s[]`来表示
+String to Symbol: `to_sym`
+Symbol to String: `to_s`
+
+## True, False, Nil
+都是对象，对应为`TrueClass`, `FalseClass`, `NilClass`
+
+## Objects
 
 
